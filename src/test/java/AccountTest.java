@@ -54,10 +54,21 @@ public class AccountTest {
         assertFalse(account.checkNameToEmboss());
     }
 
-
     @Test
     public void checkNameWithTwoSpaceInName() {
         Account account = new Account("Шаламе Ти Моти");
+        assertFalse(account.checkNameToEmboss());
+    }
+
+    @Test
+    public void checkNameWithEmptyName() {
+        Account account = new Account("");
+        assertFalse(account.checkNameToEmboss());
+    }
+
+    @Test
+    public void checkNameWithNullName() {
+        Account account = new Account(null);
         assertFalse(account.checkNameToEmboss());
     }
 }
