@@ -17,7 +17,6 @@ public class AccountTest {
         assertFalse(account.checkNameToEmboss());
     }
 
-
     @Test
     public void checkNameWithLength3Symbols() {
         Account account = new Account("Т и");

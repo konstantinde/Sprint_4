@@ -12,5 +12,4 @@ public class Praktikum {
         System.out.println(account.checkNameToEmboss());
 
     }
-
 }
