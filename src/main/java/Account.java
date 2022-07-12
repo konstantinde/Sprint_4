@@ -10,7 +10,6 @@ public class Account {
         return name;
     }
 
-
     public boolean checkNameToEmboss() {
         /*
              Этот метод должен проверять, что сохранённая через конструктор строка соответствует требованиям.
